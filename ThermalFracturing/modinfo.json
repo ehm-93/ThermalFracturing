@@ -1,12 +1,12 @@
 {
     "type": "code",
     "modid": "ThermalFracturing",
-    "name": "ThermalFracturing",
+    "name": "Thermal Fracturing",
     "authors": [
-        "Unknown"
+        "https://github.com/ehm-93"
     ],
-    "description": "To be added",
-    "version": "1.0.0",
+    "description": "Causes rocks near hot fires to fracture",
+    "version": "0.1.0",
     "dependencies": {
         "game": ""
     }
