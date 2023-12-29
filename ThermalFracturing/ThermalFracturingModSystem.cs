@@ -1,6 +1,6 @@
 ﻿using Vintagestory.API.Common;
 
-namespace ThermalFracturing
+namespace Ehm93.VintageStory.ThermalFracturing
 {
     public class ThermalFracturingModSystem : ModSystem
     {
