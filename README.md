@@ -1,10 +1,10 @@
 # Thermal Fracturing
 
-This is a Vintage Story mode which allows you to break rocks with a hot firepit.
+This is a Vintage Story mod which allows you to break rocks with a hot firepit.
 
 ## Quickstart
 
-The recommended install method is via the official Mod DB. To run a local build, run 
+The recommended install method is via the [official Vintage Story Mod Database](https://mods.vintagestory.at/thermalfracturing). To run a local build, run 
 the "Launch Client (Debug)" launch configuration in VSCode.
 
 The mod is very simple. Just burn a firepit loaded with charcoal adjacent to some rocks and wait patiently while the heat does its work!
