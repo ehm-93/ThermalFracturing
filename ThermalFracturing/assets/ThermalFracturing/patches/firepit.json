@@ -1,0 +1,8 @@
+[{
+    "file": "game:blocktypes/wood/firepit.json",
+    "path": "/entityBehaviors/-",
+    "op": "add",
+    "value": {
+        "name": "ThermalFracturingFirepit"
+    }
+}]

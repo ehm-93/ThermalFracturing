@@ -1,0 +1,13 @@
+[{
+    "file": "game:blocktypes/stone/rock.json",
+    "path": "/behaviors/-",
+    "op": "add",
+    "value": {
+        "name": "ThermalFracturingTarget",
+        "properties": {
+            "transitionTemperature": 1000,
+            "targetBlockCode": "air",
+            "transitionProbability": 1
+        }
+    }
+}]
