@@ -7,7 +7,7 @@
         "properties": {
             "transitionTemperature": 1000,
             "targetBlockCode": "air",
-            "transitionProbability": 1
+            "transitionProbability": 0.03
         }
     }
 }]
