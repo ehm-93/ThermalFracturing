@@ -22,7 +22,11 @@ namespace Ehm93.VintageStory.ThermalFracturing
             if (transitionProbability < transitionTest) return;
 
             var transitionBlock = world.GetBlock(targetBlockCode);
-            if (transitionBlock == null) throw NoSuchBlockCode(targetBlockCode);
+            if (transitionBlock == null)
+            {
+                world.Logger.Error($"The block code {targetBlockCode} does not exist but was used in configuring the ThermalFracturingTarget behavior for block {block.Code}.");
+                return;
+            };
 
             world.BlockAccessor.SetBlock(transitionBlock.Id, blockPos);
         }
@@ -45,11 +49,6 @@ namespace Ehm93.VintageStory.ThermalFracturing
         private Exception MissingPropertyException(string name)
         {
             return new InvalidOperationException($"The ThermalFracturingTarget behavior property {name} on block {block.Code} was not set but is required.");
-        }
-
-        private Exception NoSuchBlockCode(AssetLocation blockCode)
-        {
-            return new InvalidOperationException($"The block code {blockCode} does not exist but was used in configuring the ThermalFracturingTarget behavior for block {block.Code}.");
         }
     }
 }
