@@ -91,9 +91,9 @@ class BlockBehaviorThermalFracturingTarget : BlockBehavior
 
         public static ReplaceFracture Parse(JsonObject properties)
         {
-            var transitionBlockCodeStr = properties["targetBlockCode"].AsString();
-            if (transitionBlockCodeStr == null) throw Exceptions.MissingProperty("targetBlockCode");
-            var targetBlockCode = new AssetLocation(transitionBlockCodeStr);
+            var targetBlockCodeStr = properties["targetBlockCode"].AsString();
+            if (targetBlockCodeStr == null) throw Exceptions.MissingProperty("targetBlockCode");
+            var targetBlockCode = new AssetLocation(targetBlockCodeStr);
             return new ReplaceFracture(targetBlockCode);
         }
 

@@ -1,0 +1,301 @@
+{
+	code: "fractured-ore",
+	"__comment": "BlockOre only contains a few lines of code to replace flint ore into plain stone",
+	blockmaterial: "Ore",
+	attributes: {
+		mapColorCode: "land",
+		propickable: true,
+		handbook: {
+			groupBy: ["fractured-ore-{type}-*"],
+			groupedName: ["fractured-ore-{type}"],
+			excludeFromList: true
+		}
+	},
+	behaviors: [{name: "BreakIfFloating"}, { name: "UnstableRock" }],
+	variantgroups: [
+		{ code: "type", states: ["flint"], loadFromProperties: "game:block/ore-ungraded" },
+		{ code: "rock", loadFromProperties: "game:block/rockwithdeposit" }
+	],
+	skipVariants: [
+		"fractured-ore-flint-suevite",
+		"fractured-ore-flint-halite",
+		"fractured-ore-flint-alum",
+		"fractured-ore-flint-whitemarble",
+		"fractured-ore-flint-redmarble",
+		"fractured-ore-flint-greenmarble",
+		"fractured-ore-flint-scoria",
+		"fractured-ore-flint-tuff",
+		"fractured-ore-flint-obsidian"
+	],
+	allowedVariants: [
+		"fractured-ore-flint-*",
+		"fractured-ore-quartz-andesite",
+		"fractured-ore-quartz-granite",
+		"fractured-ore-quartz-basalt",
+		"fractured-ore-quartz-peridotite",
+		"fractured-ore-quartz-claystone",
+		"fractured-ore-quartz-sandstone",
+		"fractured-ore-quartz-shale",
+		"fractured-ore-quartz-chalk",
+		"fractured-ore-quartz-limestone",
+		"fractured-ore-quartz-chert",
+		"fractured-ore-quartz-conglomerate",
+		"fractured-ore-quartz-phyllite",
+		"fractured-ore-quartz-slate",
+		"fractured-ore-quartz_wolframite-granite",
+		"fractured-ore-alum-claystone",
+		"fractured-ore-alum-sandstone",
+		"fractured-ore-alum-shale",
+		"fractured-ore-alum-chalk",
+		"fractured-ore-alum-limestone",
+		"fractured-ore-alum-chert",
+		"fractured-ore-alum-conglomerate",
+		"fractured-ore-stibnite-limestone",
+		"fractured-ore-lignite-claystone",
+		"fractured-ore-lignite-sandstone",
+		"fractured-ore-lignite-shale",
+		"fractured-ore-lignite-chalk",
+		"fractured-ore-lignite-limestone",
+		"fractured-ore-lignite-chert",
+		"fractured-ore-lignite-conglomerate",
+		"fractured-ore-bituminouscoal-claystone",
+		"fractured-ore-bituminouscoal-sandstone",
+		"fractured-ore-bituminouscoal-shale",
+		"fractured-ore-bituminouscoal-chalk",
+		"fractured-ore-bituminouscoal-limestone",
+		"fractured-ore-bituminouscoal-chert",
+		"fractured-ore-bituminouscoal-conglomerate",
+		"fractured-ore-anthracite-claystone",
+		"fractured-ore-anthracite-sandstone",
+		"fractured-ore-anthracite-shale",
+		"fractured-ore-anthracite-chalk",
+		"fractured-ore-anthracite-limestone",
+		"fractured-ore-anthracite-chert",
+		"fractured-ore-anthracite-conglomerate",
+		"fractured-ore-sulfur-claystone",
+		"fractured-ore-sulfur-sandstone",
+		"fractured-ore-sulfur-shale",
+		"fractured-ore-sulfur-chalk",
+		"fractured-ore-sulfur-limestone",
+		"fractured-ore-sulfur-chert",
+		"fractured-ore-sulfur-conglomerate",
+		"fractured-ore-sylvite-halite",
+		"fractured-ore-borax-claystone",
+		"fractured-ore-borax-sandstone",
+		"fractured-ore-borax-shale",
+		"fractured-ore-borax-chalk",
+		"fractured-ore-borax-limestone",
+		"fractured-ore-borax-chert",
+		"fractured-ore-borax-conglomerate",
+		"fractured-ore-kernite-claystone",
+		"fractured-ore-kernite-sandstone",
+		"fractured-ore-kernite-shale",
+		"fractured-ore-kernite-chalk",
+		"fractured-ore-kernite-limestone",
+		"fractured-ore-kernite-chert",
+		"fractured-ore-kernite-conglomerate",
+		"fractured-ore-graphite-phyllite",
+		"fractured-ore-graphite-slate",
+		"fractured-ore-graphite-whitemarble",
+		"fractured-ore-graphite-redmarble",
+		"fractured-ore-graphite-greenmarble",
+		"fractured-ore-cinnabar-andesite",
+		"fractured-ore-cinnabar-granite",
+		"fractured-ore-cinnabar-basalt",
+		"fractured-ore-cinnabar-peridotite",
+		"fractured-ore-cinnabar-phyllite",
+		"fractured-ore-cinnabar-slate",
+		"fractured-ore-corundum-peridotite",
+		"fractured-ore-corundum-phyllite",
+		"fractured-ore-corundum-slate",
+		"fractured-ore-corundum-whitemarble",
+		"fractured-ore-corundum-redmarble",
+		"fractured-ore-corundum-greenmarble",
+		"fractured-ore-lapislazuli-limestone",
+		"fractured-ore-lapislazuli-bauxite",
+		"fractured-ore-lapislazuli-whitemarble",
+		"fractured-ore-lapislazuli-redmarble",
+		"fractured-ore-lapislazuli-greenmarble",
+		"fractured-ore-olivine-peridotite",
+		"fractured-ore-fluorite-claystone",
+		"fractured-ore-fluorite-sandstone",
+		"fractured-ore-fluorite-shale",
+		"fractured-ore-fluorite-chalk",
+		"fractured-ore-fluorite-limestone",
+		"fractured-ore-fluorite-chert",
+		"fractured-ore-fluorite-conglomerate",
+		"fractured-ore-fluorite-phyllite",
+		"fractured-ore-fluorite-slate",
+		"fractured-ore-phosphorite-claystone",
+		"fractured-ore-phosphorite-sandstone",
+		"fractured-ore-phosphorite-shale",
+		"fractured-ore-phosphorite-chalk",
+		"fractured-ore-phosphorite-limestone",
+		"fractured-ore-phosphorite-chert",
+		"fractured-ore-phosphorite-conglomerate"
+	],
+	creativeinventory: { "general": ["*"], "terrain": ["*"] },
+	storageFlags: 5,
+	shape: { base: "game:block/basic/cube" },
+	drawtype: "cube",
+	textures: {
+		all: {
+			base: "game:block/stone/rock/{rock}1",
+			overlays: [ 
+				"game:block/stone/ore/{type}1",
+				"game:block/overlay/rock/cracked1"
+			],
+			alternates: [
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked1",
+						"game:block/stone/ore/{type}2"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked1",
+						"game:block/stone/ore/{type}3"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked2",
+						"game:block/stone/ore/{type}1"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked2",
+						"game:block/stone/ore/{type}2"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked2",
+						"game:block/stone/ore/{type}3"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked3",
+						"game:block/stone/ore/{type}1"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked3",
+						"game:block/stone/ore/{type}2"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked3",
+						"game:block/stone/ore/{type}3"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked4",
+						"game:block/stone/ore/{type}1"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked4",
+						"game:block/stone/ore/{type}2"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked4",
+						"game:block/stone/ore/{type}3"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked5",
+						"game:block/stone/ore/{type}1"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked5",
+						"game:block/stone/ore/{type}2"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked5",
+						"game:block/stone/ore/{type}3"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked6",
+						"game:block/stone/ore/{type}1"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked6",
+						"game:block/stone/ore/{type}2"
+					]
+				},
+				{
+					"base": "game:block/stone/rock/{rock}1",
+					"overlays": [
+						"game:block/overlay/rock/cracked6",
+						"game:block/stone/ore/{type}3"
+					]
+				}
+			]
+		}
+	},
+	replaceable: 100,
+	resistance: 4,
+	sounds: {
+		walk: "game:walk/stone",
+		byTool: {
+			"Pickaxe": { hit: "game:block/rock-hit-pickaxe", break: "game:block/rock-break-pickaxe" }
+		}
+	},
+	requiredMining: 0,
+	dropsByType: {
+		"fractured-ore-quartz-*": [
+			{ type: "item", code: "game:clearquartz",  quantity: { avg: 0.2, var: 0 }, lastDrop: true },
+			{ type: "item", code: "game:ore-quartz",  quantity: { avg: 1.25, var: 0 }  }
+		],
+		"fractured-ore-flint-*": [
+			{ type: "item", code: "game:flint",  quantity: { avg: 1.5, var: 0 }, lastDrop: true },
+		],
+		"fractured-ore-sylvite-*": [
+			{ type: "item", code: "game:ore-{type}",  quantity: { avg: 2.5, var: 0.25 }  }
+		],
+		"*": [ 
+			{ type: "item", code: "game:ore-{type}",  quantity: { avg: 1.25, var: 0 }  }
+		],
+	},
+	heldTpIdleAnimation: "holdbothhandslarge", heldRightReadyAnimation: "heldblockready", heldTpUseAnimation: "twohandplaceblock",
+	tpHandTransform: {
+		translation: { x: -1.23, y: -0.91, z: -0.8 },
+		rotation: { x: -2, y: 25, z: -78 },
+		scale: 0.4
+	}
+}

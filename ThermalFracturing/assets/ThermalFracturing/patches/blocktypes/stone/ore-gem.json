@@ -7,7 +7,8 @@
         "properties": {
             "fractureTemperature": 1000,
             "fractureProbability": 0.02,
-            "fractureMode": "destroy"
+            "fractureMode": "replace",
+            "targetBlockCode": "thermalfracturing:fractured-ore-{potential}-{type}-{rock}"
         }
     }
 }]
