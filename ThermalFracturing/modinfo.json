@@ -6,7 +6,7 @@
         "ehm-93"
     ],
     "description": "Causes rocks near hot fires to fracture",
-    "version": "0.2.0-SNAPSHOT",
+    "version": "0.2.0",
     "dependencies": {
         "game": "",
         "survival": ""
